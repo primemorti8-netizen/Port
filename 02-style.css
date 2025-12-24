@@ -1,0 +1,197 @@
+:root {
+    --color-bg: #ffffff;
+    --color-bg-page: var(--color-bg);
+  }
+
+ /* стартовая сцена */
+ body {
+   
+    background: #070707; /* старт всегда чёрный */
+  }
+
+  /* ОБЩИЙ КОНТЕЙНЕР НАВБАРА */
+.nav {
+    position: fixed;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    display: flex;
+    flex-direction: column; /* Ссылки сверху, линия снизу */
+    align-items: center;    /* Центрируем всё по горизонтали */
+    
+    width: 90%;             /* Адаптивная ширина */
+    max-width: 700px;       /* Максимальная ширина как в твоем проекте */
+    padding: 20px 0 10px;   /* Отступы: сверху 20, по бокам 0, снизу 10 */
+    
+  
+    z-index: 1000;
+    overflow: hidden;       /* Чтобы анимация линии не вылезала за края капсулы */
+  }
+  
+  /* СТИЛИ ССЫЛОК */
+/* либо убираем transition из .nav a */
+.nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #f6f6f6;
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+    font-weight: bold;
+    
+    /* убрал transition отсюда */
+  }
+  
+  /* и оставляем transition в .color-nav */
+  .color-nav {
+    display:inline-block;
+    transition: color 0.3s ease, transform 0.18s cubic-bezier(.22,.9,.2,1);
+    will-change: transform;
+    
+  }
+  .color-nav:hover { transform: translateY(-4px); }
+
+ .nav-links {
+    display: flex;
+    gap: 20px;
+ }
+
+   .STYLE-H1 {
+
+   }
+
+   .STYLE-H2 {
+    font-size: 34px;
+    font-family: 'Inconsolata';
+    margin: 0;
+   }
+
+   .STYLE-H3 {
+    color: var(--color-bg);
+    font-family: 'Inconsolata';
+    margin: 0 0 20px 0;
+   }
+
+   .IMG {
+    width: 50px;
+    height: 50px;
+   }
+
+
+   .TEXT-GLOBAL {
+    min-height: 100vh;          /* чтобы был вертикальный центр */
+    display: flex;
+    flex-direction: column;     /* чтобы элементы шли ВНИЗ, а не ВПРАВО */
+    justify-content: center;    /* вертикальный центр */
+    align-items: flex-start;    /* левый край */
+    padding-left: 80px;         /* отступ слева */
+    gap: 8px;                  /* расстояние между h1 и p */
+   }
+
+
+   .TEXT001 {
+    color: var(--color-bg);
+    max-width: 800px;
+   }
+
+   .TEXT002 {
+    font-family: 'Inconsolata';
+   }
+
+    .color-nav {
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease-out;
+    will-change: transform;
+  
+   }
+    .color-nav:hover {
+    transform: translateY(-4px);
+    
+   }
+
+  
+.full-height-divider {
+    border-left: 1px solid rgb(255, 255, 255);  /* Тонкая чёрная линия слева */
+                    
+    /* Или border-right для линии справа */
+}
+
+
+
+
+
+
+.sidebar {
+  display: flex;              /* Главное: всё в ряд и выравнивается само */
+  align-items: center;        /* "More about me" и ссылки на одной высоте (по центру вертикально) */
+  position: relative;         /*Не будет рабоатть top*/
+  top: -600px;                 /* поднимет на 20px */
+  gap: 50px;                  /* Расстояние от текста до линии и от линии до ссылок — меняй это, чтобы двигать */
+  padding: 100px 0;           /* Отступы сверху/снизу — чтобы не у края экрана */
+  color: white;
+  font-family: 'Inconsolata', monospace; /* Твой шрифт */
+  margin-left: 80px;
+  
+}
+
+.sidebar-left {        /* "More about me" прижат к линии справа , я тут убрал t , елси надо верни  */
+  font-size: 14px;            /* Подстрой размер */
+}
+
+.sidebar-line {
+  width: 1px;                 /* Толщина */
+  height: 70px;               /* Длина линии — подстрой под свой текст */
+  background-color: white;    /* Белая */
+  /* Если хочешь короче/длиннее — меняй height */
+}
+
+.sidebar-right {
+  display: flex;
+  gap: 30px;                  /* Расстояние между ссылками */
+  font-size: 14px;
+}
+
+.sidebar-right a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.sidebar-right a:hover {
+  opacity: 1;
+}
+
+
+
+  .iconSSS {
+  display: flex;
+  gap: 15px;
+ 
+ 
+  }
+ 
+  .icon {
+    width: 35px;
+    height: 35px;
+    color: white;
+    filter: invert(1);
+    display: inline-block;
+    
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 240ms cubic-bezier(.2,.8,.2,1), opacity 240ms ease; /* какие свойства анимировать, длительность и easing-функции */
+    will-change: transform, opacity;
+
+  }
+  
+  .icon:hover {
+    transform: translateY(-5px);  /* Поднимается вверх на 6px */
+    /* Или scale(1.1) для увеличения: transform: translateY(-4px) scale(1.1); */
+    opacity: 0.58; /* лёгкое уменьшение прозрачности для более "мягкого" эффекта */
+  }
+ 
+
+
+
+  
