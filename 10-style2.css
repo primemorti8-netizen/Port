@@ -74,9 +74,25 @@ body {
     line-height: 1.8;
     max-width: 700px;
 }
+/* .line {                    Класс для самой лини
+height: 1px;                  Толщина линии — 1 пиксель (можно 2px, 4px и т.д.)
+background-color: white;      Цвет линии — белый 
+width: 0;                    Начальная ширина — 0 (линия невидима) 
+animation: draw 1.5s ease-out forwards; Запускаем анимацию: имя "draw", длительность 1.5 секунды, плавное замедление в конце, сохраняем конечное состояние 
+}
+
+@keyframes draw {                 Определяем ключевые кадры анимации 
+from {                       Состояние в начале (0%) 
+    width: 0;                Ширина 0
+}
+to {                          Состояние в конце (100%) 
+    width: 100%;             Ширина 100% от родителя 
+}
+} */
 
 .donate-methods {
     margin-bottom: 40px;
+    
 }
 
 .donate-methods ul {
@@ -93,6 +109,7 @@ body {
     color: white;
     text-decoration: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    width: 0;
     transition: opacity 0.3s ease;
 }
 
@@ -101,6 +118,8 @@ body {
     border-bottom-color: white;
 }
 
+ 
+ 
 .section-title {
     font-size: 24px;
     opacity: 0.7;
@@ -139,6 +158,7 @@ body {
     font-size: 20px;
     font-weight: 600;
     opacity: 0.9;
+    
 }
 
 .donor-name {
