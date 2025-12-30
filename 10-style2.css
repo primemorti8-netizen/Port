@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* Основные стили для body: черный фон, белый текст, моноширинный шрифт */
 body {
     background-color: #000;
     color: white;
@@ -11,12 +12,14 @@ body {
     line-height: 1.6;
 }
 
+/* Контейнер основного контента: центрирование и ограничение ширины */
 .main-content {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
+/* Шапка сайта: флекс-контейнер для размещения логотипа и навигации */
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -26,18 +29,21 @@ body {
     margin-bottom: 40px;
 }
 
+/* Стили для заголовка сайта */
 .site-title h3 {
     font-size: 20px;
     opacity: 0.7;
     font-weight: 400;
 }
 
+/* Навигация: горизонтальное расположение элементов */
 .main-nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
+/* Ссылки навигации: белые, полупрозрачные, с плавным переходом */
 .main-nav a {
     color: white;
     text-decoration: none;
@@ -46,15 +52,18 @@ body {
     transition: opacity 0.3s ease;
 }
 
+/* При наведении ссылки становятся полностью видимыми */
 .main-nav a:hover {
     opacity: 1;
 }
 
+/* Контейнер заголовка "Donate" */
 .donate-text-container {
     padding-top: 30px;
     margin-bottom: 40px;
 }
 
+/* Стили основного заголовка H2 */
 .H2 {
     color: white;
     font-family: 'Inconsolata';
@@ -63,63 +72,86 @@ body {
     font-weight: 400;
 }
 
+/* Вступительный текст о донатах */
 .donate-intro {
     margin-top: 20px;
     margin-bottom: 40px;
 }
 
+/* Параграф вступительного текста: полупрозрачный, ограниченная ширина */
 .donate-intro p {
     opacity: 0.5;
     font-size: 16px;
     line-height: 1.8;
     max-width: 700px;
 }
-/* .line {                    Класс для самой лини
-height: 1px;                  Толщина линии — 1 пиксель (можно 2px, 4px и т.д.)
-background-color: white;      Цвет линии — белый 
-width: 0;                    Начальная ширина — 0 (линия невидима) 
-animation: draw 1.5s ease-out forwards; Запускаем анимацию: имя "draw", длительность 1.5 секунды, плавное замедление в конце, сохраняем конечное состояние 
-}
 
-@keyframes draw {                 Определяем ключевые кадры анимации 
-from {                       Состояние в начале (0%) 
-    width: 0;                Ширина 0
-}
-to {                          Состояние в конце (100%) 
-    width: 100%;             Ширина 100% от родителя 
-}
-} */
-
+/* Контейнер для списка платформ донатов */
 .donate-methods {
     margin-bottom: 40px;
-    
 }
 
+/* Убираем стандартные маркеры списка */
 .donate-methods ul {
     list-style: none;
 }
 
+/* Элементы списка: полупрозрачные, с отступом снизу */
 .donate-methods li {
     opacity: 0.5;
     font-size: 16px;
     margin-bottom: 8px;
 }
 
+/* Ссылки на платформы: с волновой анимацией подчеркивания */
 .donate-methods a {
     color: white;
     text-decoration: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    width: 0;
+    position: relative;
+   
+    display: inline-block;
     transition: opacity 0.3s ease;
 }
 
-.donate-methods a:hover {
-    opacity: 1;
-    border-bottom-color: white;
+/* Псевдоэлемент для создания анимированной линии под ссылкой */
+.donate-methods a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;        /* линия есть всегда */
+    opacity: 0.5;
+    height: 1px;
+    background-color: white;
+    /* Анимация запускается только при наведении */
 }
 
- 
- 
+/* При наведении ссылка становится ярче и запускается волновая анимация */
+.donate-methods a:hover {
+    opacity: 1;
+}
+
+.donate-methods a:hover::after {
+    /* Волновая анимация: плавное появление линии слева направо при наведении */
+    animation: wave 0.6s ease-out forwards;
+}
+
+/* Анимация волны: линия плавно расширяется от 0 до 100% ширины */
+@keyframes wave {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    100% {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+/* Заголовок секции "Top donors" */
 .section-title {
     font-size: 24px;
     opacity: 0.7;
@@ -128,6 +160,7 @@ to {                          Состояние в конце (100%)
     margin-top: 60px;
 }
 
+/* Сетка карточек доноров: 5 колонок на больших экранах */
 .CARD_SECTION {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -137,6 +170,7 @@ to {                          Состояние в конце (100%)
     margin-bottom: 60px;
 }
 
+/* Карточка донора: рамка, скругленные углы, плавные переходы */
 .donor-card {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 8px;
@@ -149,30 +183,34 @@ to {                          Состояние в конце (100%)
     min-height: 140px;
 }
 
+/* При наведении карточка поднимается и рамка светлеет */
 .donor-card:hover {
     border-color: rgba(255, 255, 255, 0.6);
     transform: translateY(-2px);
 }
 
+/* Сумма доната: крупный шрифт */
 .donor-amount {
     font-size: 20px;
     font-weight: 600;
     opacity: 0.9;
-    
 }
 
+/* Имя донора: средний размер, полупрозрачное */
 .donor-name {
     font-size: 16px;
     opacity: 0.7;
     font-weight: 400;
 }
 
+/* Платформа доната: мелкий шрифт, прижат к низу карточки */
 .donor-platform {
     font-size: 13px;
     opacity: 0.4;
     margin-top: auto;
 }
 
+/* Ссылка на профиль донора: с иконкой, полупрозрачная */
 .donor-link {
     display: inline-flex;
     align-items: center;
@@ -185,33 +223,39 @@ to {                          Состояние в конце (100%)
     margin-top: 4px;
 }
 
+/* При наведении ссылка становится полностью видимой */
 .donor-link:hover {
     opacity: 1;
 }
 
+/* Размер SVG-иконок в ссылках */
 .donor-link svg {
     width: 14px;
     height: 14px;
 }
 
+/* Адаптивность: 4 колонки на экранах до 1100px */
 @media (max-width: 1100px) {
     .CARD_SECTION {
         grid-template-columns: repeat(4, 1fr);
     }
 }
 
+/* 3 колонки на экранах до 900px */
 @media (max-width: 900px) {
     .CARD_SECTION {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
+/* 2 колонки на экранах до 600px */
 @media (max-width: 600px) {
     .CARD_SECTION {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
+/* 1 колонка на маленьких экранах (до 400px) */
 @media (max-width: 400px) {
     .CARD_SECTION {
         grid-template-columns: 1fr;

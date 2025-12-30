@@ -1,0 +1,20 @@
+ * {
+background-color: black;
+color: white;
+font-family: 'inconsolata', monospace;
+font-size: 16px;
+font-weight: 400;
+ }
+
+
+ .title_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;                                         /*Ну вот и линия собственно*/
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 40px;
+   
+}
+ 
+ 
