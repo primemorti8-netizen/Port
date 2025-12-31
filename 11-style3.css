@@ -14,7 +14,12 @@ font-weight: 400;
     padding: 20px;                                         /*Ну вот и линия собственно*/
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     margin-bottom: 40px;
-   
+    
 }
  
+.text-line {
+    font-family: 'inconsolata';
+    font-weight: 400;
+    opacity: 0.6;
+}
  
