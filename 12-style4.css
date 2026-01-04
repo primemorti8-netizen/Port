@@ -16,17 +16,31 @@
     padding: 20px;              /* Отступы внутри блока со всех сторон 20px */
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);  /* ГОРИЗОНТАЛЬНАЯ линия внизу блока */
     margin-bottom: 40px;        /* Отступ снизу после линии 40px */
-
+   
  }
 
 
 
  .page_line_vertical {
-    max-width: 900px;                 /* ширина контентной области */
-    margin: 0 auto;                   /* центрирование по горизонтали */
+   max-width: 900px;                 /* ширина контентной области */
+   margin: 0 auto;                   /* центрирование по горизонтали */
+    padding: 40px;
+    height: 100vh;
+ }
+
+ .Loonaa {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 900px;
+    height: 100vh;
     border-left: 1px solid rgba(255,255,255,0.25);
     border-right: 1px solid rgba(255,255,255,0.25);
-    padding: 40px;
+    pointer-events: none;
+    z-index: -1;
+ 
 
 
  }
