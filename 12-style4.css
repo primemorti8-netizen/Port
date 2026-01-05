@@ -1,46 +1,145 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
 
+body {
+   background-color: #000;
+   color: #fff;
+   font-family: 'Inconsolata', monospace;
+   font-size: 16px;
+   line-height: 1.6;
+   position: relative;
+}
 
- * {
-    background-color: black;
-    color: white;
-    font-family: 'inconsolata', monospace;
-    font-size: 16px;
-    font-weight: 400;
-    }
-  
-/* Стиль для линии под заголовком */
-.title_line {
-    display: flex;              /* Flexbox для выравнивания элементов в строку */
-    justify-content: space-between;  /* Распределяет элементы: текст слева, линия справа */
-    align-items: center;        /* Выравнивает элементы по вертикали по центру */
-    padding: 20px;              /* Отступы внутри блока со всех сторон 20px */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);  /* ГОРИЗОНТАЛЬНАЯ линия внизу блока */
-    margin-bottom: 40px;        /* Отступ снизу после линии 40px */
-   
- }
+/* Вертикальные линии */
+body:before,
+body:after {
+   content: '';
+   position: fixed;
+   top: 0;
+   width: 1px;
+   height: 100%;
+   z-index: 0;
+}
 
+body:before {
+   left: calc(50% - 400px);
+}
 
+body:after {
+   right: calc(50% - 400px);
+}
 
- .page_line_vertical {
-   max-width: 900px;                 /* ширина контентной области */
-   margin: 0 auto;                   /* центрирование по горизонтали */
-    padding: 40px;
-    height: 100vh;
- }
+nav {
+   font-size: 14px;
+}
 
- .Loonaa {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    max-width: 900px;
-    height: 100vh;
-    border-left: 1px solid rgba(255,255,255,0.25);
-    border-right: 1px solid rgba(255,255,255,0.25);
-    pointer-events: none;
-    z-index: -1;
- 
+nav a {
+   color: #888;
+   text-decoration: none;
+}
 
+nav a.active {
+   color: #fff;
+}
 
- }
+/* Главный контейнер */
+.container {
+   max-width: 800px;
+   margin: 0 auto;
+   padding: 90px 40px;
+}
+
+h1 {
+   font-size: 32px;
+   font-weight: 600;
+   margin-bottom: 10px;
+}
+
+.subtitle {
+   color: #888;
+   margin-bottom: 40px;
+   font-size: 14px;
+}
+
+.subtitle a {
+   color: #888;
+   text-decoration: underline;
+}
+
+h2 {
+   font-size: 24px;
+   font-weight: 600;
+   margin-top: 50px;
+   margin-bottom: 20px;
+}
+
+ul {
+   list-style: none;
+   margin-left: 20px;
+}
+
+/* ИСПРАВЛЕНО: Добавлено условие - точки только для li внутри main, 
+   чтобы они не появлялись в навигации */
+main li {
+   position: relative;
+   padding-left: 15px;
+}
+
+main li:before {
+   content: "•";
+   position: absolute;
+   left: 0;
+   color: #666;
+}
+
+a {
+   color: #fff;
+   text-decoration: underline;
+   text-decoration-color: rgba(255, 255, 255, 0.3);
+}
+
+a:hover {
+   text-decoration-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Вложенные списки */
+ul ul {
+   margin-top: 10px;
+   margin-left: 30px;
+}
+
+ul ul li:before {
+   content: "+";
+}
+
+/* ИСПРАВЛЕНО: Убран margin-left и list-style для навигации */
+.main-nav ul {
+   list-style: none;
+   display: flex;
+   gap: 20px;
+   margin-left: 0; /* Добавлено для отмены margin-left: 20px из общего ul */
+}
+
+.main-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+   margin-bottom: 40px;
+}
+
+.site-title {
+   font-size: 20px;
+   opacity: 0.7;
+   font-weight: 400;
+}
+
+.LILILI {
+   margin-bottom: 20px;
+   /* УДАЛЕНО: position: relative и padding-left, 
+      так как они уже применены к main li */
+}

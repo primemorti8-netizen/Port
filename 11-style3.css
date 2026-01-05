@@ -17,9 +17,14 @@ font-weight: 400;
     
 }
  
+.TOCHKA {
+    opacity: 0.6;
+} 
+
 .text-line {
     font-family: 'inconsolata';
     font-weight: 400;
-    opacity: 0.6;
+    
+    font-size: 22px;
 }
  
