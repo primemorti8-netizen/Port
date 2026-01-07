@@ -79,7 +79,7 @@
 
 
    .TEXT-GLOBAL {
-    min-height: 100vh;          /* чтобы был вертикальный центр */
+    min-height: 110vh;          /* чтобы был вертикальный центр */
     display: flex;
     flex-direction: column;     /* чтобы элементы шли ВНИЗ, а не ВПРАВО */
     justify-content: center;    /* вертикальный центр */
