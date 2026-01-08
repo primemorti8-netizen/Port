@@ -115,7 +115,7 @@ ul ul li:before {
    content: "+";
 }
 
-/* ИСПРАВЛЕНО: Убран margin-left и list-style для навигации */
+/* ИСПРАВЛЕНО: Убран margin-left и list-style для навигаци */
 .main-nav ul {
    list-style: none;
    display: flex;
