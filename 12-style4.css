@@ -120,7 +120,7 @@ ul ul li:before {
    list-style: none;
    display: flex;
    gap: 20px;
-   margin-left: 0; /* Добавлено для отмены margin-left: 20px из общего ul */
+   margin-left: 0; /* Добавлено для отмены margin-left: 20px из общего ul ttt */
 }
 
 .main-header {
