@@ -6,18 +6,225 @@
     <link rel="stylesheet" href="11-style3.css">
     <title>Loona | Projects</title>
  </head>
- <body>
-    <header class="title_header">
-     <div>
-     <h3>:// Projects</h3>
-     </div>
-        <div class="title_line">
-        <ul>
-        <li class="TOCHKA">
-        <a href="01-index.html" class="text-line">home</a>
-        </li>
-        </ul>
-        </div>
-    </header>
+ <header class="main-header">
+   <div class="site-title">
+       <h3>:// Projects</h3>
+   </div>
+   <nav class="main-nav">
+       <ul>
+           <li><a href="01-index.html">home</a></li>
+           <li><a href="#">projects</a></li>
+           <li><a href="#">blog</a></li>
+           <li><a href="#">speaking</a></li>
+       </ul>
+   </nav>
+</header>
+
+<main class="main-content">
+   <div class="projects-header">
+       <h2 class="H2">Projects</h2>
+   </div>
+
+   <div class="projects-intro">
+       <p>
+           A collection of open source projects, tools, and experiments I've built over the years. 
+           Most of these are available on GitHub and actively maintained.
+       </p>
+   </div>
+
+   <div class="filter-tabs">
+       <button class="filter-tab active" data-filter="all">All</button>
+       <button class="filter-tab" data-filter="web">Web</button>
+       <button class="filter-tab" data-filter="tools">Tools</button>
+       <button class="filter-tab" data-filter="libraries">Libraries</button>
+       <button class="filter-tab" data-filter="experimental">Experimental</button>
+   </div>
+
+   <div class="projects-grid">
+       <div class="project-card" data-category="web">
+           <div class="project-header">
+               <h3 class="project-title">Portfolio Site</h3>
+               <div class="project-icon">
+                   <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                       <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                       <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+                   </svg>
+               </div>
+           </div>
+           <p class="project-description">
+               Personal portfolio website built with modern web technologies. Features minimalist design, 
+               responsive layout, and smooth animations.
+           </p>
+           <div class="project-footer">
+               <div class="project-tech">
+                   <span class="tech-tag">HTML</span>
+                   <span class="tech-tag">CSS</span>
+                   <span class="tech-tag">JavaScript</span>
+               </div>
+               <div class="project-stats">
+                   <span class="stat-item">★ </span>
+                   <span class="stat-item">⑂ </span>
+               </div>
+           </div>
+           <a href="#" class="project-link">
+               View on GitHub
+               <svg fill="currentColor" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+               </svg>
+           </a>
+       </div>
+
+       <div class="project-card" data-category="tools">
+           <div class="project-header">
+               <h3 class="project-title">---</h3>
+               <div class="project-icon">
+                   <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                       <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                       <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+                   </svg>
+               </div>
+           </div>
+           <p class="project-description">
+             
+           </p>
+           <div class="project-footer">
+               <div class="project-tech">
+                   <span class="tech-tag">Node.js</span>
+                   <span class="tech-tag">CLI</span>
+               </div>
+               <div class="project-stats">
+                   <span class="stat-item">★ </span>
+                   <span class="stat-item">⑂ </span>
+               </div>
+           </div>
+           <a href="#" class="project-link">
+               View on GitHub
+               <svg fill="currentColor" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+               </svg>
+           </a>
+       </div>
+
+       <div class="project-card" data-category="libraries">
+           <div class="project-header">
+               <h3 class="project-title">---</h3>
+               <div class="project-icon">
+                   <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                       <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                       <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+                   </svg>
+               </div>
+           </div>
+           <p class="project-description">
+              
+           </p>
+           <div class="project-footer">
+               <div class="project-tech">
+                   <span class="tech-tag">React</span>
+                   <span class="tech-tag">TypeScript</span>
+               </div>
+               <div class="project-stats">
+                   <span class="stat-item">★ </span>
+                   <span class="stat-item">⑂ </span>
+               </div>
+           </div>
+           <a href="#" class="project-link">
+               View on GitHub
+               <svg fill="currentColor" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+               </svg>
+           </a>
+       </div>
+
+       <div class="project-card" data-category="web">
+           <div class="project-header">
+               <h3 class="project-title">---</h3>
+               <div class="project-icon">
+                   <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                       <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                       <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+                   </svg>
+               </div>
+           </div>
+           <p class="project-description">
+            
+           </p>
+           <div class="project-footer">
+               <div class="project-tech">
+                   <span class="tech-tag">React</span>
+                   <span class="tech-tag">TailwindCSS</span>
+               </div>
+               <div class="project-stats">
+                   <span class="stat-item">★ </span>
+                   <span class="stat-item">⑂ </span>
+               </div>
+           </div>
+           <a href="#" class="project-link">
+               View on GitHub
+               <svg fill="currentColor" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+               </svg>
+           </a>
+       </div>
+
+       <div class="project-card" data-category="experimental">
+           <div class="project-header">
+               <h3 class="project-title">---</h3>
+               <div class="project-icon">
+                   <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                       <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                       <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+                   </svg>
+               </div>
+           </div>
+           <p class="project-description">
+               
+           </p>
+           <div class="project-footer">
+               <div class="project-tech">
+                   <span class="tech-tag">Python</span>
+                   <span class="tech-tag">TensorFlow</span>
+               </div>
+               <div class="project-stats">
+                   <span class="stat-item">★ </span>
+                   <span class="stat-item">⑂ </span>
+               </div>
+           </div>
+           <a href="#" class="project-link">
+               View on GitHub
+               <svg fill="currentColor" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+               </svg>
+           </a>
+       </div>
+
+       <div class="project-card" data-category="tools">
+           <div class="project-header">
+               <h3 class="project-title">---</h3>
+               <div class="project-icon">
+                   <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                       <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                       <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+                   </svg>
+               </div>
+           </div>
+           <p class="project-description">
+             
+           </p>
+           <div class="project-footer">
+               <div class="project-tech">
+                   <span class="tech-tag">Electron</span>
+                   <span class="tech-tag">Vue.js</span>
+               </div>
+               <div class="project-stats">
+                   <span class="stat-item">★ </span>
+                   <span class="stat-item">⑂ </span>
+               </div>
+           </div>
+           <a href="#" class="project-link">
+               View on GitHub
+               <svg fill="currentColor" viewBox="0 0 16 16">
+                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
+ 
  </body>
  </html>

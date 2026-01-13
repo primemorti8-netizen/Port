@@ -133,9 +133,9 @@ ul ul li:before {
 }
 
 .site-title {
-   font-size: 20px;
-   opacity: 0.7;
-   font-weight: 400;
+    font-size: 20px;
+    opacity: 0.7;
+    font-weight: 400;
 }
 
 .LILILI {
@@ -143,3 +143,8 @@ ul ul li:before {
    /* УДАЛЕНО: position: relative и padding-left, 
       так как они уже применены к main li */
 }
+
+ ::selection {                 /* Псевдоэлемент: стиль текста в момент выделения мышкой */
+   background: color(srgb 0.65 0.1 0.2);
+   color: white;           
+  }

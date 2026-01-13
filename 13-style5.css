@@ -6,3 +6,19 @@
  font-size: 16px;
  font-weight: 400;
  }
+
+ .site_title {
+    font-size: 20px;
+    opacity: 0.7;
+    font-weight: 400;
+    border-bottom: 1px solid;
+    max-width: 710px;
+    transition: transform 0.2s ease;
+    padding-top: 15px;
+    margin: 0 auto;   /* вот это центрирует блок */
+ }
+
+ 
+ .site_title:hover {
+    transform: scale(1.02);
+  }

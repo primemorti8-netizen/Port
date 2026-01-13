@@ -7,14 +7,97 @@
     <title>Stats</title>
  </head>
  <body>
-   <section class="github-stats">
-      <h2>GitHub Activity</h2>
-      <div class="github-graph">
-          <img src="https://ghchart.rshah.org/409ba5/primemorti8-netizen" 
-               alt="GitHub Contributions"
-               loading="lazy" />
-      </div>
-  </section>
+ <header class="main-header">
+   <div class="site-title">
+       <h3>:// Stats</h3>
+   </div>
+   <nav class="main-nav">
+       <ul>
+           <li><a href="#">home</a></li>
+           <li><a href="#">projects</a></li>
+           <li><a href="#">blog</a></li>
+           <li><a href="#">speaking</a></li>
+       </ul>
+   </nav>
+</header>
+
+<main class="main-content">
+   <div class="stats-header">
+       <h2 class="H2">Statistics</h2>
+   </div>
+
+   <div class="stats-intro">
+       <p>
+           Here's an overview of my activity, contributions, and most-used technologies. 
+           All data is updated regularly from various platforms and repositories.
+       </p>
+   </div>
+
+   <div class="stats-grid">
+       <div class="stat-card">
+           <div class="stat-value">247</div>
+           <div class="stat-label">Total Commits</div>
+       </div>
+       <div class="stat-card">
+           <div class="stat-value">32</div>
+           <div class="stat-label">Repositories</div>
+       </div>
+       <div class="stat-card">
+           <div class="stat-value">1.2k</div>
+           <div class="stat-label">Stars Earned</div>
+       </div>
+       <div class="stat-card">
+           <div class="stat-value">89</div>
+           <div class="stat-label">Pull Requests</div>
+       </div>
+   </div>
+
+   <h3 class="section-title">Most Used Languages</h3>
+   
+   <div class="tech-list">
+       <div class="tech-item">
+           <span class="tech-name">JavaScript</span>
+           <span class="tech-percentage">34%</span>
+       </div>
+       <div class="tech-item">
+           <span class="tech-name">Python</span>
+           <span class="tech-percentage">28%</span>
+       </div>
+       <div class="tech-item">
+           <span class="tech-name">TypeScript</span>
+           <span class="tech-percentage">18%</span>
+       </div>
+       <div class="tech-item">
+           <span class="tech-name">HTML/CSS</span>
+           <span class="tech-percentage">12%</span>
+       </div>
+       <div class="tech-item">
+           <span class="tech-name">Go</span>
+           <span class="tech-percentage">5%</span>
+       </div>
+       <div class="tech-item">
+           <span class="tech-name">Rust</span>
+           <span class="tech-percentage">3%</span>
+       </div>
+   </div>
+
+   <h3 class="section-title">Contribution Activity</h3>
+   
+   <div class="activity-graph">
+       <div id="contribution-graph"></div>
+       <div class="graph-legend">
+           <div class="legend-item">
+               <div class="legend-box" style="background: rgba(255, 255, 255, 0.1);"></div>
+               <span>Less</span>
+           </div>
+           <div class="legend-item">
+               <div class="legend-box" style="background: rgba(255, 255, 255, 0.8);"></div>
+               <span>More</span>
+           </div>
+       </div>
+   </div>
+</main>
+
  </body>
  </html>
 
